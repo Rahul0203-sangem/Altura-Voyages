@@ -1,0 +1,87 @@
+/* Booking Section Styles */
+#booking {
+    padding: 5rem 2rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('/photos/booking-bg.jpg') center/cover;
+    color: white;
+  }
+  
+  #booking h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: white;
+  }
+  
+  #booking form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+  }
+  
+  #booking label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    color: white;
+  }
+  
+  #booking input,
+  #booking select {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 1rem;
+  }
+  
+  #booking input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  #booking select option {
+    background: #333;
+    color: white;
+  }
+  
+  #booking button {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #booking button:hover {
+    background-color: var(--primary-dark);
+  }
+  
+  @media (max-width: 768px) {
+    #booking {
+      padding: 4rem 1rem;
+    }
+    
+    #booking h2 {
+      font-size: 2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    #booking {
+      padding: 3rem 1rem;
+    }
+    
+    #booking form {
+      padding: 1.5rem;
+    }
+  }
